@@ -1,6 +1,7 @@
 xorg-drivers ?
 add README
 
+more --noconfirm on pacman
 
 efibootmgr like this:
 efibootmgr -c -d /dev/sda -p 1 -L "Arch Linux" -l "EFI\arch\grubx64.efi" -v

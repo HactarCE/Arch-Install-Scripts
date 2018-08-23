@@ -9,7 +9,7 @@ if [[ ${response:l} = y ]]; then
   echo
   pacman -S bumblebee mesa nvidia xf86-video-intel --needed
   echo
-  read "name?${bold}Enter username (for ${yellow}bumblebee${nofmt} group): ${nofmt}"
+  read "name?${bold}Enter username (for ${yellow}bumblebee${white} group): ${nofmt}"
   echo "${bold}${blue}gpasswd -a "$name" bumblebee${nofmt}"
   echo
   gpasswd -a "$name" bumblebee
