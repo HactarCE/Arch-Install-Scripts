@@ -9,5 +9,5 @@ if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}arch-chroot /mnt pacman -S dialog wpa_supplicant --needed --noconfirm${nofmt}"
   arch-chroot /mnt pacman -S dialog wpa_supplicant --needed --noconfirm
   echo
-  echo "${bold}${yellow}dialog${greeen} and ${yellow}wpa_supplicant${greeen} package installation complete\!${nofmt}"
+  echo "${bold}${yellow}dialog${greeen} and ${yellow}wpa_supplicant${greeen} package installation complete!${nofmt}"
 fi

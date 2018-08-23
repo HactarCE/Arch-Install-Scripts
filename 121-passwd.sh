@@ -5,4 +5,4 @@ source header.sh
 echo "Running ${blue}passwd${white}...${nofmt}"
 passwd
 echo
-echo "${bold}${green}Root password set\!${nofmt}"
+echo "${bold}${green}Root password set!${nofmt}"

@@ -12,4 +12,4 @@ echo
 echo
 echo "${bold}${blue}echo ${name} > /etc/hostname${nofmt}"
 echo $name > /etc/hostname
-echo "${green}Hostname configuration complete\!${nofmt}"
+echo "${green}Hostname configuration complete!${nofmt}"

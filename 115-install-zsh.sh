@@ -8,4 +8,4 @@ echo "${bold}${blue}arch-chroot /mnt pacman -S zsh --needed --noconfirm${nofmt}"
 echo
 arch-chroot /mnt pacman -S zsh --needed --noconfirm
 echo
-echo "${bold}${yellow}zsh${green} package installation complete\!${nofmt}"
+echo "${bold}${yellow}zsh${green} package installation complete!${nofmt}"

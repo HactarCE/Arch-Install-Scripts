@@ -16,4 +16,4 @@ echo "${bold}${blue}grub-install ${device}${nofmt}"
 echo
 grub-install $device
 echo
-echo "${bold}${green}Bootloader installation complete\!${nofmt}"
+echo "${bold}${green}Bootloader installation complete!${nofmt}"

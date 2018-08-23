@@ -49,4 +49,4 @@ reflector -l 200 -f 20 --sort rate --save /etc/pacman.d/mirrorlist
 # pacman -Syy
 
 echo
-echo "${bold}${green}Mirrors ranked\!${nofmt}"
+echo "${bold}${green}Mirrors ranked!${nofmt}"

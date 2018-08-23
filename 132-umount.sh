@@ -7,4 +7,4 @@ echo "${blue}umount -R /mnt${nofmt}"
 echo
 umount -R /mnt
 echo
-echo "${bold}${yellow}/mnt${white} unmounted\!${nofmt}"
+echo "${bold}${yellow}/mnt${white} unmounted!${nofmt}"

@@ -7,4 +7,4 @@ echo "${blue}systemctl enable lightdm${nofmt}"
 echo
 systemctl enable lightdm
 echo
-echo "${bold}${green}LightDM service enabled\!${nofmt}"
+echo "${bold}${green}LightDM service enabled!${nofmt}"

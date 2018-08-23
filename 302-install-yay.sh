@@ -13,5 +13,5 @@ if [[ ${response:l} != n ]]; then
   echo
   pacman -S yay --needed
   echo
-  echo "${bold}${yellow}python${green} package installed\!${nofmt}"
+  echo "${bold}${yellow}python${green} package installed!${nofmt}"
 fi

@@ -6,4 +6,4 @@ echo "${bold}${blue}genfstab /mnt >> /mnt/etc/fstab${nofmt}"
 echo
 genfstab /mnt >> /mnt/etc/fstab
 echo
-echo "${bold}${blue}genfstab${green} complete\!${nofmt}"
+echo "${bold}${blue}genfstab${green} complete!${nofmt}"

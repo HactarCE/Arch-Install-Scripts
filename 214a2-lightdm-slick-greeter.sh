@@ -22,4 +22,4 @@ echo "${bold}${blue}makepkg -si${nofmt}"
 echo
 makepkg -si
 echo
-echo "${bold}${green}LightDM greeter installation complete\!${nofmt}"
+echo "${bold}${green}LightDM greeter installation complete!${nofmt}"

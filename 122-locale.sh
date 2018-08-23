@@ -21,4 +21,4 @@ echo "${bold}${blue}locale-gen${nofmt}"
 echo
 locale-gen
 echo
-echo "${bold}${green}Locale configuration complete\!${nofmt}"
+echo "${bold}${green}Locale configuration complete!${nofmt}"

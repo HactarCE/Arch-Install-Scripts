@@ -34,4 +34,4 @@ if [ -e /etc/localtime ]; then
 fi
 echo "${bold}${blue}ln -s \"$f\" /etc/localtime"
 ln -s "$f" /etc/localtime
-echo "${bold}${green}Timezone configuration complete\!${nofmt}"
+echo "${bold}${green}Timezone configuration complete!${nofmt}"

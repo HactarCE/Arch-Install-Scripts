@@ -7,7 +7,7 @@ echo "${blue}pacman -S xorg-server xorg-apps xorg-xinit --needed${white}"
 echo
 pacman -S xorg-server xorg-apps xorg-xinit --needed
 echo
-echo "${bold}${green}X.Org installed\!${nofmt}"
+echo "${bold}${green}X.Org installed!${nofmt}"
 
 # TODO does this really belong here? needed for lightdm config though...
 echo
@@ -17,5 +17,5 @@ if [[ ${response:l} != n ]]; then
   echo
   pacman -S numlockx --needed --noconfirm
   echo
-  echo "${bold}${yellow}xnumlock${white} package installation complete\!${nofmt}"
+  echo "${bold}${yellow}xnumlock${white} package installation complete!${nofmt}"
 fi

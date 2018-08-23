@@ -9,7 +9,7 @@ if [[ ${response:l} != n ]]; then
   echo
   pacman -S i3-gaps --needed
   echo
-  echo "${bold}${green}i3wm installation complete\!${nofmt}"
+  echo "${bold}${green}i3wm installation complete!${nofmt}"
 
   echo
   read -k1 "response?${bold}Install ${yellow}dmenu${white}, ${yellow}i3lock${white}, and ${yellow}i3status${white}? ${Yn}"; echo
@@ -18,6 +18,6 @@ if [[ ${response:l} != n ]]; then
     echo
     pacman -S dmenu i3lock i3status --needed
     echo
-    echo "${bold}${green}i3wm accessory installation complete\!${nofmt}"
+    echo "${bold}${green}i3wm accessory installation complete!${nofmt}"
   fi
 fi

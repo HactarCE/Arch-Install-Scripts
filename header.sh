@@ -24,7 +24,7 @@ any_key_continue () {
 check_connection () {
   if ping -w1 -c1 8.8.8.8; then
     echo
-    echo "${bold}${green}Connected\!${nofmt}"
+    echo "${bold}${green}Connected!${nofmt}"
   else
     echo "${bold}${red}Unable to connect.${white} Check ethernet connection or use ${blue}wifi-menu${white} to connect to wifi.${nofmt}"
   fi

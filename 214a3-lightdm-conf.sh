@@ -17,5 +17,5 @@ if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}cp /install-scripts/lightdm-conf.d/* /etc/lightdm/lightdm.conf.d${nofmt}"
   cp /install-scripts/lightdm-conf.d/* /etc/lightdm/lightdm.conf.d
   echo
-  echo "${bold}${green}LightDM configuration complete\!${nofmt}"
+  echo "${bold}${green}LightDM configuration complete!${nofmt}"
 fi
