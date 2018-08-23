@@ -13,3 +13,8 @@ use chfn to change user details
 ttf-ubuntu-font-family is required for lighdm-slick-greeter, not lightdm
 
 keyboard layout
+
+optionally enable multilib:
+https://wiki.archlinux.org/index.php/official_repositories#Enabling_multilib
+
+color for pacman and yay (see https://github.com/Jguer/yay)

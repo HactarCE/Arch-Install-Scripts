@@ -97,7 +97,10 @@ print("Done getting package list.")
 print()
 print("Installing packages...")
 print()
-run('yay -S --needed ' + ' '.join(package_list))
+if run('yay -S --needed ' + ' '.join(package_list)).returncode:
+    print()
+    print("Uh oh. There was an error.")
+    exit()
 print()
 print("Running post-install commands...")
 for command in command_list:
