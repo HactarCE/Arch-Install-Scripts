@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source header
+source header.sh
 
 echo "${bold}Use ${blue}cfdisk${white} and ${blue}mkfs${white} to arrange and format partitions as needed. Use ${blue}mount /dev/sd${cyan}X${blue} /mnt${white} to mount the root directory, and similar commands for other partitions. (e.g. ${blue}mount /dev/sd${cyan}X${blue} /mnt/home${white})"
 echo

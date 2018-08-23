@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source header
+source header.sh
 
 echo "${bold}${blue}grub-mkconfig -o /boot/grub/grub.cfg${nofmt}"
 echo

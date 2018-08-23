@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source header
+source header.sh
 
 echo "${bold}${blue}mkinicpio -p linux${nofmt}"
 echo

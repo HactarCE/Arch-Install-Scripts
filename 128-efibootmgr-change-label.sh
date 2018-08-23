@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source header
+source header.sh
 
 echo "${bold}If you'd like, you can use ${blue}efibootmgr${white} to change the default EFI boot order:"
 echo
