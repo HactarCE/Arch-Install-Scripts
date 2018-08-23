@@ -3,8 +3,7 @@
 source header.sh
 
 while true; do
-  cd /usr/share/zoneinfo
-  unset f
+  f=/usr/share/zoneinfo
   while [ ! -f "$f" ]; do
     tput clear
     echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
