@@ -27,10 +27,16 @@ source header.sh
 # echo
 # rankmirrors -n 6 mirrorlist | tee mirrorlist
 
-echo "${bold}Insatlling ${blue}reflector${white}..."
-echo "${blue}pacman -Sy reflector --needed${nofmt}"
+echo "${bold}Updating ${blue}python${white}..."
+echo "${blue}pacman -Sy python --needed${nofmt}"
 echo
-pacman -Sy reflector --needed
+pacman -Sy python --needed
+echo
+
+echo "${bold}Installing ${blue}reflector${white}..."
+echo "${blue}pacman -S reflector --needed${nofmt}"
+echo
+pacman -S reflector --needed
 echo
 echo "${bold}${blue}reflector -l 200 -f 10 --sort score${nofmt}"
 echo
