@@ -2,4 +2,4 @@
 
 source header.sh
 
-check_connection()
+check_connection
