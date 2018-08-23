@@ -28,5 +28,7 @@ if [[ ${response:l} != n ]]; then
   echo
   os-prober
   echo
-  echo "${bold}Hopefully it found your other operating systems. If you haven't installed the other OSes yet, re-run ${blue}129-grub-mkconfig.sh${white} after you do.${nofmt}"
+  echo "${bold}Hopefully it found your other operating systems. If you haven't installed the other OSes yet, re-run ${blue}129-grub-mkconfig.sh${white} after you do."
+  echo
+  echo "I've had issues before with running ${blue}os-prober${white} from the live USB, so if you get an error, try it again after rebooting.${nofmt}"
 fi
