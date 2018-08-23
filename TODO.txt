@@ -1,2 +1,8 @@
 xorg-drivers ?
 add README
+
+
+efibootmgr like this:
+efibootmgr -c -d /dev/sda -p 1 -L "Arch Linux" -l "EFI\arch\grubx64.efi" -v
+
+do os-prober, additional grub-mkconfig, and efibootmgr after booting in

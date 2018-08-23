@@ -9,8 +9,8 @@ echo "${blue}efibootmgr -v${white}"
 echo
 echo "Modify label by deleting and recreating entry:"
 echo "${blue}efibootmgr -b 2 -B"
-echo "efibootmgr -d ${cyan}/dev/sdX${blue} -p ${cyan}Y${blue} -c -L \"Arch Linux\" -l /vmlinuz-linux --unicode 'root=PARTUUID=${cyan}XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX${blue} rw initrd=\initramfs-linux.img' -v${white}"
-echo "... where ${cyan}/dev/sdX${white} and ${cyan}Y${white} are the drive letter and partition number repsectively where ${yellow}/boot${white} is located."
+echo "efibootmgr -d ${cyan}/dev/sdX${blue} -p ${cyan}Y${blue} -c -L \"Arch Linux\" -l /vmlinuz-linux -u 'root=PARTUUID=${cyan}XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX${blue} rw initrd=\initramfs-linux.img' -v${white}"
+echo "... where ${cyan}/dev/sdX${white} and ${cyan}Y${white} are the drive letter and partition number respectively where ${yellow}/boot${white} is located."
 echo "... and ${cyan}XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX${white} is the partition UUID, which can be read from ${blue}efibootmgr -v${white} ${underline}before${no_underline} deleting the partition or from ${blue}blkid${white}."
 echo
 echo "Change boot order:"

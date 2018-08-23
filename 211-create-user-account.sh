@@ -11,9 +11,9 @@ echo
 
 unset shell_path
 echo "${bold}Enter the new user's default shell.${nofmt} ${yellow}/bin/bash${white} is recommended, but ${yellow}/bin/zsh${white} is also available."
-while [ ! -x shell_path ]; do
+while [ ! -x $shell_path ]; do
   read "shell_path?${bold}Default shell:${nofmt} "
-  [ ! ( -z shell_path || -x shell_path ) ] && echo "${bold}${red}Not an executable file.${nofmt} Seriously, don't expect me to double-check everything."
+  [ ! ( -z $shell_path || -x $shell_path ) ] && echo "${bold}${red}Not an executable file.${nofmt} Seriously, don't expect me to double-check everything."
 done
 echo
 
