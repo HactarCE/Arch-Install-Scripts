@@ -3,11 +3,11 @@
 source header.sh
 
 while true; do
-  f=/usr/share/zoneinfo
+  cd /usr/share/zoneinfo
+  unset f
   while [ ! -f "$f" ]; do
     tput clear
     echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
-    cd $f
     echo "${yellow}$(pwd)${white}"
     echo "${bold}Select a region/timezone${nofmt}"
     ls
@@ -17,6 +17,7 @@ while true; do
       read "f?${bold}Enter the region/timezone name:${nofmt} "
       tput rc; tput ed
     done
+    cd $f
   done
   tput clear
   echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
