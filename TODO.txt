@@ -1,3 +1,4 @@
 xorg-drivers ?
 add README
 fix exclamation points
+add newline after ever read -k1
