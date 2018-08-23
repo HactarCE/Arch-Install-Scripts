@@ -13,11 +13,11 @@ unset shell_path
 echo "${bold}Enter the new user's default shell.${nofmt} ${yellow}/bin/bash${white} is recommended, but ${yellow}/bin/zsh${white} is also available."
 while [ ! -x "$shell_path" ]; do
   read "shell_path?${bold}Default shell:${nofmt} "
-  [ -x "$shell_path" ] && echo "${bold}${red}Not an executable file.${nofmt} Seriously, don't expect me to double-check everything."
+  [ ! -x "$shell_path" ] && echo "${bold}${red}Not an executable file.${nofmt} Seriously, don't expect me to double-check everything."
 done
 echo
 
-echo "response?${bold}Add new user ${yellow}${username}${white} with ${yellow}${shell_path}${white} as default shell? ${Yn}"
+read "response?${bold}Add new user ${yellow}${username}${white} with ${yellow}${shell_path}${white} as default shell? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}useradd -m -g users -s ${shell_path} ${username}${nofmt}"
   useradd -m -g users -s "$shell_path" "$username"
@@ -25,7 +25,7 @@ if [[ ${response:l} != n ]]; then
   echo
   passwd "${username}"
   echo
-  read "response?${bold}Allow ${userusername} to use ${blue}sudo${white} to run commands as root? ${Yn}"
+  read "response?${bold}Allow ${userusername} to use ${blue}sudo${white} to run commands as root? ${Yn}"; echo
   if [[ ${response:l} != n ]]; then
     echo
     echo "${bold}Okay, you're on your own for this one. I'm going to run ${blue}visudo${white}, and you'll have to add the following one line under the \"User privelage specification\" section:"

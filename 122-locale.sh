@@ -13,7 +13,7 @@ if [[ ${response:l} = y ]]; then
   sed -i 's/^#en_US/en_US/g' /etc/locale.gen
 else
   echo "${bold}Uncomment the locales you want to use. Use ctrl-w to search for the one you want.${nofmt}"
-  read -sk1 "?(Press any key to continue and run ${blue}nano /etc/locale.gen${white}.)"
+  read -sk1 "?(Press any key to continue and run ${blue}nano /etc/locale.gen${white}.)"; echo
   nano /etc/locale.gen
 fi
 echo

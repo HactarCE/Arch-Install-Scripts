@@ -18,7 +18,7 @@ white=$(tput setaf 7)
 titlesep="\n-------------------------------------------------------------------------------\n"
 
 any_key_continue () {
-  read -sk1 "?Press any key to continue."
+  read -sk1 "?Press any key to continue."; echo
 }
 
 check_connection () {
