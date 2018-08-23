@@ -1,0 +1,9 @@
+mono
+wine
+# TODO maybe?
+# winetricks
+exfat-utils
+
+# Kdenlive
+frei0r-plugins
+breeze-icons

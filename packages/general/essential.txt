@@ -1,0 +1,29 @@
+# Dotfiles
+yadm-git
+
+# Editor
+atom
+emacs
+! git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+! mkdir -p ~/.emacs.d/private/hactar-evil
+! git clone https://github.com/HactarCE/hactar-evil ~/.emacs.d/private/hactar-evil
+
+# Discord
+discord
+
+# i3
+i3lock-fancier-git
+polybar
+dmenu2
+
+# Browser
+vivaldi
+vivaldi-codecs-ffmpeg-extra-bin
+vivaldi-widevine
+pepper-flash
+
+# Zsh plugins
+# TODO
+zsh-completions
+zsh-fast-syntax-highlighting-git
+zsh-autosuggestions

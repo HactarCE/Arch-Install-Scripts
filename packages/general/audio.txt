@@ -1,0 +1,11 @@
+pulseaudio
+pulseaudio-alsa
+pavucontrol
+# TODO maybe
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-jack
+# alsa-firmware
+# alsa-utils
+# lib32-libcanberra-pulse
+# lib32-libpulse

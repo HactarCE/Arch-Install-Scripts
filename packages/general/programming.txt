@@ -1,0 +1,25 @@
+# Python
+# TODO figure out Python packaging/virtualenv situation
+# python-blessed
+# python-discord-git
+autopep8
+# ! pip install clipboard # not sure why/whether this is needed
+# i3ipc-python
+# ! pip install i3ipc dmenu
+
+# Android
+## android-platform
+## android-sdk
+## android-sdk-platform-tools
+## android-sdk-build-tools
+# android-studio
+# android-tools
+
+# Java
+jre8-openjdk
+jdk8-openjdk
+
+# Clojure
+clojure
+rlwrap
+boot

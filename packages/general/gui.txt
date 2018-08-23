@@ -1,0 +1,33 @@
+# TODO
+# xfce4-settings
+# bool
+
+zeal
+obs-studio
+golly
+
+etcher
+
+gcolor2
+
+speedcrunch
+steam
+
+eog
+
+tilp
+blueman
+
+# System management
+font-manager
+gnome-system-monitor
+lxappearance
+# TODO switch to different file manager maybe
+pcmanfm
+
+# Editor/creator
+libreoffice-still
+intellij-idea-community-edition
+audacity
+blender
+kdenlive

@@ -1,0 +1,37 @@
+#!/usr/bin/env zsh
+
+source header.sh
+
+while true; do
+  cd /usr/share/zoneinfo
+  unset f
+  while [ ! -f "$f" ]; do
+    tput clear
+    echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
+    cd $f
+    echo "${yellow}$(pwd)${white}"
+    echo "${bold}Select a region/timezone${nofmt}"
+    ls
+    tput sc
+    while [ ! -e "$f" ]; do
+      [ ! -z "$f" ] && echo "${bold}${red}Invalid.${nofmt}"
+      read "f?${bold}Enter the region/timezone name:${nofmt} "
+      tput rc; tput ed
+    done
+  done
+  tput clear
+  echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
+  echo "${yellow}$(pwd)/${f}${white}"
+  read -k1 "response?${bold}Confirm timezone? ${Yn}"
+  [[ ${response:l} = n ]] || break
+done
+echo
+echo "${bold}Setting timezone...${nofmt}"
+# sometimes /etc/localtime defaults to UTC, so we need to get rid of that first
+if [ -e /etc/localtime ]; then
+  echo "${bold}${blue}rm /etc/localtime${nofmt}"
+  rm /etc/localtime
+fi
+echo "${bold}${blue}ln -s \"$f\" /etc/localtime"
+ln -s "$f" /etc/localtime
+echo "${bold}${green}Timezone configuration complete\!${nofmt}"

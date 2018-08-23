@@ -1,0 +1,6 @@
+# Fonts
+terminus-font-ll2-td1
+ttf-iosevka-ss04
+ttf-iosevka-term-ss04
+ttf-nerd-fonts-symbols
+ttf-ubuntu-font-family

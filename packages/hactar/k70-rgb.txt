@@ -1,0 +1,10 @@
+ckb-next
+! sudo systemctl enable ckb-daemon
+# evtest
+# TODO this is NOT the place for this stuff
+# evtest /dev/input/event8 | grep MSC_SCAN
+# lsusb -v | grep G600
+# cd /etc/udev/hwdb.d
+# sudo cp ~/Desktop/70-g600.hwdb .
+# sudo cp ~/Desktop/70-g600.hwdb /etc/udev/hwdb.d && sudo systemd-hwdb update && sudo udevadm trigger
+# sudo udevadm hwdb --update && sudo udevadm trigger

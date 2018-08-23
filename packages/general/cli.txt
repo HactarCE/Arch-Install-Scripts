@@ -1,0 +1,25 @@
+# TODO
+# the_silver_searcher ctags
+
+# Useful
+asciinema # TODO maybe move to some "terminal emulator" category
+nmap
+pmount
+unp unrar zip unzip
+maim
+xclip
+# TODO i3 has a great interface -- why is wmctrl necessary?
+# wmctrl
+imagemagick
+
+# Fun
+neofetch
+lolcat
+fortune-mod
+nyancat
+cowsay
+# TODO
+# sl
+cmatrix
+bash-pipes
+hollywood
