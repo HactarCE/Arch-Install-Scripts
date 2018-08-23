@@ -20,12 +20,12 @@ fi
 echo "${bold}Selecting mirrors in ${mirror_country}..."
 echo "${blue}sed '/^$/q' mirrorlist.bak > mirrorlist${nofmt}"
 sed '/^$/q' mirrorlist.bak > mirrorlist # copy header
-echo "${bold}${blue}grep -A2 \"$mirror_country\" mirrorlist.bak | sed '/^--$d' >> mirrorlist${nofmt}"
-grep -A2 "$mirror_country" mirrorlist.bak | sed '/^--$/d' >> mirrorlist # filter by country
+echo "${bold}${blue}grep -A1 \"$mirror_country\" mirrorlist.bak | sed '/^--$d' >> mirrorlist${nofmt}"
+grep -A1 "$mirror_country" mirrorlist.bak | sed '/^--$/d' >> mirrorlist # filter by country
 echo "${bold}Ranking mirrors..."
-echo "${blue}rankmirrors -n 6 mirrorlist > mirrorlist${nofmt}"
+echo "${blue}rankmirrors -n 6 mirrorlist | tee mirrorlist${nofmt}"
 echo
-rankmirrors -n 6 mirrorlist > mirrorlist
+rankmirrors -n 6 mirrorlist | tee mirrorlist
 # echo
 # echo "$(tput bold)Updating package databases...$(tput init)"
 # echo
