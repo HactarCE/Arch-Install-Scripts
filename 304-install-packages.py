@@ -31,7 +31,7 @@ def getch(allowed='', print_char=True):
     return ch
 
 def ask_package_group(name, allow_some=True):
-    print(f"Install package group '{name}'? [A{'S' if allow_some else ''}N]", end='')
+    print(f"Install package group '{name}'? [A{'S' if allow_some else ''}N]", end=' ')
     sys.stdout.flush()
     c = getch('anAN' + ('sS' if allow_some else '')).lower()
     print()
@@ -74,7 +74,7 @@ print("Package groups to install:")
 for file in install_list:
     print(f"Install {file}")
 print()
-print("Confirm? [YN] ")
+print("Confirm? [YN]", end=' ')
 yn = getch('ynYN').lower()
 if yn == 'n':
     print("Aborting...")
@@ -96,7 +96,7 @@ print("Done getting package list.")
 print()
 print("Installing packages...")
 print()
-run('yay -S ' + ' '.join(package_list))
+run('yay -S --needed ' + ' '.join(package_list))
 print()
 print("Running post-install commands...")
 for command in command_list:
