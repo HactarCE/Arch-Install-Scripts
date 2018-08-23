@@ -9,9 +9,9 @@ echo
 read -k1 "response?${bold}Install ${yellow}python${white}? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo
-  echo "${bold}${blue}pacman -S python --needed"
+  echo "${bold}${blue}sudo pacman -S python --needed"
   echo
-  pacman -S python --needed
+  sudo pacman -S python --needed
   echo
   echo "${bold}${yellow}python${green} package installed!${nofmt}"
 fi

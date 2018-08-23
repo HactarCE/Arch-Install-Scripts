@@ -9,9 +9,18 @@ echo
 read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo
-  echo "${bold}${blue}pacman -S yay --needed"
+  echo "${bold}${blue}cd /tmp${nofmt}"
+  cd /tmp
+  echo "${bold}${blue}git clone https://aur.archlinx.org/yay.git${nofmt}"
   echo
-  pacman -S yay --needed
+  git clone https://aur.archlinux.org/yay.git
   echo
-  echo "${bold}${yellow}python${green} package installed!${nofmt}"
+  echo "${bold}${blue}cd yay${nofmt}"
+  echo
+  cd yay
+  echo "${bold}${blue}makepkg -si${nofmt}"
+  echo
+  makepkg -si
+  echo
+  echo "${bold}${yellow}yay${green} package installed!${nofmt}"
 fi
