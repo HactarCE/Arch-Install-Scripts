@@ -16,7 +16,6 @@ if [[ ${response:l} != n ]]; then
   git clone https://aur.archlinux.org/yay.git
   echo
   echo "${bold}${blue}cd yay${nofmt}"
-  echo
   cd yay
   echo "${bold}${blue}makepkg -si${nofmt}"
   echo

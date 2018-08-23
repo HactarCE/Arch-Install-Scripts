@@ -15,13 +15,15 @@ def getch(allowed='', print_char=True):
     old_settings = termios.tcgetattr(fd)
     try:
         tty.setraw(sys.stdin.fileno())
-        if ch:
-            while ch not in allowed + '\x03':
+        if allowed:
+            ch = None
+            while not (ch and ch in allowed + '\x03'):
                 ch = sys.stdin.read(1)
         else:
             ch = sys.stdin.read(1)
         if print_char:
             sys.stdout.write(ch)
+            sys.stdout.flush()
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
     if ch == '\x03':
@@ -30,6 +32,7 @@ def getch(allowed='', print_char=True):
 
 def ask_package_group(name, allow_some=True):
     print(f"Install package group '{name}'? [A{'S' if allow_some else ''}N]", end='')
+    sys.stdout.flush()
     c = getch('anAN' + ('sS' if allow_some else '')).lower()
     print()
     return c
@@ -47,7 +50,7 @@ def install_some(pathname):
     install_list = []
     for member in os.listdir(pathname):
         member_pathname = path.join(pathname, member)
-        c = ask_package_group(pathname, path.isdir(member_pathname))
+        c = ask_package_group(member_pathname, path.isdir(member_pathname))
         if c == 'a':
             install_list += install_all(member_pathname)
         elif c == 's':
@@ -55,6 +58,7 @@ def install_some(pathname):
     return install_list
 
 print("Updating package database...")
+print()
 if run('yay -Sy').returncode:
     print("Aborting...")
     exit()
