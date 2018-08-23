@@ -3,7 +3,7 @@
 source header.sh
 
 echo "${bold}Installing X.Org..."
-echo "${blue}pacman -S xorg-server xorg-apps xorg-xinit --needed${white}"
+echo "${blue}pacman -S xorg-server xorg-apps xorg-xinit --needed${nofmt}"
 echo
 pacman -S xorg-server xorg-apps xorg-xinit --needed
 echo
@@ -17,5 +17,5 @@ if [[ ${response:l} != n ]]; then
   echo
   pacman -S numlockx --needed --noconfirm
   echo
-  echo "${bold}${yellow}xnumlock${white} package installation complete!${nofmt}"
+  echo "${bold}${yellow}numlockx${white} package installation complete!${nofmt}"
 fi
