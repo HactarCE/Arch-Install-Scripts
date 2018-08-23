@@ -22,7 +22,7 @@ while true; do
   tput clear
   echo "${bold}${magenta}TIMEZONE${titlesep}${nofmt}"
   echo "${yellow}$(pwd)/${f}${white}"
-  read -k1 "response?${bold}Confirm timezone? ${Yn}"
+  read -k1 "response?${bold}Confirm timezone? ${Yn}"; echo
   [[ ${response:l} = n ]] || break
 done
 echo

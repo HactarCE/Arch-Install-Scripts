@@ -6,8 +6,8 @@ echo "${bold}We've gotten this far without Python, but no way am I writing a she
 echo
 echo "You can uninstall it once we're done, if you really want.${nofmt}"
 echo
-read -k1 "response?${bold}Install ${yellow}python${white}? ${Yn}"
-if [[ ${reponse:l} != n ]]; then
+read -k1 "response?${bold}Install ${yellow}python${white}? ${Yn}"; echo
+if [[ ${response:l} != n ]]; then
   echo
   echo "${bold}${blue}pacman -S python --needed"
   echo

@@ -3,7 +3,7 @@
 source header.sh
 
 echo "${bold}If you want to use a desktop environment or window manager other than i3wm, install it yourself.${nofmt}"
-read -k1 "response?Install i3wm? ${Yn}"
+read -k1 "response?Install i3wm? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}pacman -S i3-gaps --needed${nofmt}"
   echo
@@ -12,7 +12,7 @@ if [[ ${response:l} != n ]]; then
   echo "${bold}${green}i3wm installation complete\!${nofmt}"
 
   echo
-  read -k1 "response?${bold}Install ${yellow}dmenu${white}, ${yellow}i3lock${white}, and ${yellow}i3status${white}? ${Yn}"
+  read -k1 "response?${bold}Install ${yellow}dmenu${white}, ${yellow}i3lock${white}, and ${yellow}i3status${white}? ${Yn}"; echo
   if [[ ${response:l} != n ]]; then
     echo "${bold}${blue}pacman -S dmenu i3lock i3status --needed${nofmt}"
     echo

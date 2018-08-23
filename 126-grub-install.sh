@@ -5,7 +5,7 @@ source header.sh
 fdisk -l
 echo
 read "device?${bold}Enter device name for bootloader installation (e.g. ${yellow}/dev/sda${white}):${nofmt} "
-read -k1 "reponse?${bold}Install bootloader on ${yellow}${device}${white}? ${yN}"
+read -k1 "response?${bold}Install bootloader on ${yellow}${device}${white}? ${yN}"; echo
 if [[ ${response:l} != y ]]; then
   echo "${bold}${red}Aborting...${nofmt}"
   return 1

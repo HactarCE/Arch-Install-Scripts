@@ -8,7 +8,7 @@ echo
 pacman -S grub-bios --needed --noconfirm
 echo
 echo "${bold}${yellow}grub-bios${green} package installation complete\!${white} Grub has not necessarily been installed yet."
-read -k1 "response?${bold}${blue}Install ${yellow}efibootmgr${white} for EFI support? ${Yn}"
+read -k1 "response?${bold}${blue}Install ${yellow}efibootmgr${white} for EFI support? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}pacman -S efibootmgr --needed --noconfirm${nofmt}"
   echo
@@ -16,7 +16,7 @@ if [[ ${response:l} != n ]]; then
   echo
   echo "${bold}${yellow}efibootmgr${green} package installation complete\!${white} Grub has not necessarily been installed yet."
 fi
-read -k1 "response?${bold}${blue}Install ${yellow}os-prober${white} for dual-boot support with other operating systems? ${Yn}"
+read -k1 "response?${bold}${blue}Install ${yellow}os-prober${white} for dual-boot support with other operating systems? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}pacman -S os-prober --needed --noconfirm${nofmt}"
   echo

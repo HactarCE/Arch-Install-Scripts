@@ -6,8 +6,8 @@ echo "${bold}${yellow}yay${white} is an AUR wrapper written in Go. No, you shoul
 echo
 echo "You can uninstall it once we're done, if you really want.${nofmt}"
 echo
-read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"
-if [[ ${reponse:l} != n ]]; then
+read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
+if [[ ${response:l} != n ]]; then
   echo
   echo "${bold}${blue}pacman -S yay --needed"
   echo

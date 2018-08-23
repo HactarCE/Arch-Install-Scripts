@@ -3,7 +3,7 @@
 source header.sh
 
 # echo "${bold}The working directory MUST be the same as the directory of this script."
-# read -k1 "response?Is this script in ${yellow}$(pwd)${white}? ${Yn}"
+# read -k1 "response?Is this script in ${yellow}$(pwd)${white}? ${Yn}"; echo
 # if [[ ${response:l} = n ]]; then
 #   echo "${bold}${red}Aborting...${nofmt}"
 #   return 1
