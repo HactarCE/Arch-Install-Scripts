@@ -38,7 +38,7 @@ echo "${blue}pacman -S reflector --needed${nofmt}"
 echo
 pacman -S reflector --needed
 echo
-echo "${bold}${blue}reflector -l 200 -f 10 --sort score${nofmt}"
+echo "${bold}${blue}reflector -l 200 -f 20 --sort rate --save /etc/pacman.d/mirrorlist${nofmt}"
 echo
 reflector -l 200 -f 20 --sort rate --save /etc/pacman.d/mirrorlist
 
