@@ -75,6 +75,7 @@ for file in install_list:
     print(f"Install {file}")
 print()
 print("Confirm? [YN]", end=' ')
+sys.stdout.flush()
 yn = getch('ynYN').lower()
 if yn == 'n':
     print("Aborting...")
