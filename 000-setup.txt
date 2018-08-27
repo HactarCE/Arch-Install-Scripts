@@ -2,3 +2,4 @@ After getting an internet connection, run the following commands:
 
 pacman -Sy git
 git clone https://github.com/HactarCE/Arch-Install-Scripts /install-scripts
+cd /install-scripts
