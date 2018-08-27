@@ -1,4 +1,0 @@
-# TODO handle this
-
-# ! sudo mwhd -i pci video-nvidia
-# ! sudo nvidia-xconfig
