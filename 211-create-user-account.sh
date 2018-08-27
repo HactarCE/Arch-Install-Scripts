@@ -18,6 +18,12 @@ done
 echo
 
 read -k1 "response?${bold}Run ${blue}chfn${white} to set user information (e.g. Name, Office, Office Phone, Home Phone) ${yN}"; echo
+if [[ ${response:l} = y ]]; then
+  echo "${bold}${blue}chfn ${username}${nofmt}"
+  echo
+  chfn "${username}"
+  echo
+done
 
 read -k1 "response?${bold}Add new user ${yellow}${username}${white} with ${yellow}${shell_path}${white} as default shell? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
