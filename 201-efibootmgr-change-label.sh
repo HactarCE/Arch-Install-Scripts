@@ -22,4 +22,6 @@ echo
 echo "Change boot order:"
 echo "Apparently it's possible to do this from ${blue}efibootmgr${white}, but I've had more success with just doing it in the BIOS settings. You're on your own for this one."
 echo
+echo "Until you've tested it, ${underline}assume that whatever you've done has broken the boot entry${no_underline}. If you can't get into Grub, re-run ${blue}126-grub-install.sh${white} from a live USB."
+echo
 echo "Good luck!${nofmt}"
