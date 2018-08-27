@@ -9,3 +9,4 @@ pulseaudio-jack
 # alsa-utils
 # lib32-libcanberra-pulse
 # lib32-libpulse
+pamixer
