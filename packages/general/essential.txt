@@ -16,11 +16,15 @@ i3lock-fancier-git
 polybar
 dmenu2
 
+# Terminal
+termite
+
 # Browser
+flashplugin
+pepper-flash
 vivaldi
 vivaldi-codecs-ffmpeg-extra-bin
 vivaldi-widevine
-pepper-flash
 
 # Zsh plugins
 # TODO
