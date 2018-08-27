@@ -7,8 +7,8 @@ echo
 echo "You can uninstall it once we're done, if you really want.${nofmt}"
 echo
 read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
+echo
 if [[ ${response:l} != n ]]; then
-  echo
   echo "${bold}${blue}cd /tmp${nofmt}"
   cd /tmp
   echo "${bold}${blue}git clone https://aur.archlinx.org/yay.git${nofmt}"

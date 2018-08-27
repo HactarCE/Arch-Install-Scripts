@@ -4,11 +4,7 @@ source header.sh
 
 echo "See RFC 952 for best practices regarding hostname."
 echo
-# while true; do
-  read "name?${bold}Enter new system hostname:${nofmt} "
-  # read -k1 "response?${bold}Set system hostname to ${yellow}${name}${white}? ${Yn}"; echo
-  # [[ ${response:l} = n ]] || break
-# done
+read "name?${bold}Enter new system hostname:${nofmt} "
 echo
 echo "${bold}${blue}echo ${name} > /etc/hostname${nofmt}"
 echo $name > /etc/hostname

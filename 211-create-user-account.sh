@@ -18,6 +18,7 @@ done
 echo
 
 read -k1 "response?${bold}Add new user ${yellow}${username}${white} with ${yellow}${shell_path}${white} as default shell? ${Yn}"; echo
+echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}useradd -m -g users -s ${shell_path} ${username}${nofmt}"
   useradd -m -g users -s "$shell_path" "$username"
@@ -26,8 +27,8 @@ if [[ ${response:l} != n ]]; then
   passwd "${username}"
   echo
   read -k1 "response?${bold}Allow ${userusername} to use ${blue}sudo${white} to run commands as root? ${Yn}"; echo
+  echo
   if [[ ${response:l} != n ]]; then
-    echo
     echo "${bold}Okay, you're on your own for this one. I'm going to run ${blue}visudo${white}, and you'll have to add the following one line under the \"User privelage specification\" section:"
     echo "${yellow}${user} ALL=(ALL) ALL${white}"
     echo "$There should be a similar line for the ${yellow}root${white} user. Here's a quick vi/vim crash course to get you through:"

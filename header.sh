@@ -30,5 +30,12 @@ check_connection () {
   fi
 }
 
+pacman_auto_install () {
+  echo "${bold}${blue}pacman -S $*"
+  echo
+  pacman -S "$@" --needed --noconfirm
+  echo
+}
+
 Yn=" [${green}Y${white}/${red}n${white}]${nofmt} "
 yN=" [${green}y${white}/${red}N${white}]${nofmt} "

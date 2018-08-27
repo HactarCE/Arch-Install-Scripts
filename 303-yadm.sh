@@ -2,10 +2,7 @@
 
 source header.sh
 
-echo "${bold}${blue}yay -S yadm --needed${nofmt}"
-echo
-yay -S yadm --needed
-echo
+pacman_auto_install yadm
 echo "${bold}${blue}cd $HOME${nofmt}"
 cd $HOME
 echo
