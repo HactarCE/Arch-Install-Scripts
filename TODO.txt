@@ -1,8 +1,5 @@
 add README
 
-keyboard layout
+make yellow/blue coloring more consistent
 
-optionally enable multilib:
-https://wiki.archlinux.org/index.php/official_repositories#Enabling_multilib
-
-color for pacman and yay (see https://github.com/Jguer/yay)
+automate 213-pacman-conf.sh
