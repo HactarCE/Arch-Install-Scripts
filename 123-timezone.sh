@@ -31,6 +31,7 @@ if [ -e /etc/localtime ]; then
   echo "${bold}${blue}rm /etc/localtime${nofmt}"
   rm /etc/localtime
 fi
+rm -f /etc/localtime
 echo "${bold}${blue}ln -s \"$(pwd)/$f\" /etc/localtime"
 ln -s "$(pwd)/$f" /etc/localtime
 echo "${bold}${green}Timezone configuration complete!${nofmt}"
