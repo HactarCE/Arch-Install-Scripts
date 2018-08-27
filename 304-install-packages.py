@@ -81,28 +81,35 @@ if yn == 'n':
     print("Aborting...")
     exit()
 
-print()
-print("Getting package list...")
-package_list = []
-command_list = []
+failed_files = []
 for file in install_list:
+    print()
     print(f"Parsing {file}...")
+    package_list = []
+    command_list = []
     for line in open(file):
         line = line.partition('#')[0].strip()
         if line.startswith('!'):
             command_list.append(line[1:].strip())
         else:
             package_list += line.split()
-print("Done getting package list.")
-print()
-print("Installing packages...")
-print()
-if run('yay -S --needed ' + ' '.join(package_list)).returncode:
+    print(f"Installing packages from {file}...")
     print()
-    print("Uh oh. There was an error.")
-    exit()
+    if run('yay -S --needed --noconfirm ' + ' '.join(package_list)).returncode:
+        print()
+        print("Uh oh. There was an error.")
+        failed_files.append(file)
+    print()
+    print("Running post-install commands...")
+    print()
+    for command in command_list:
+        print(command)
+        run(command)
+
 print()
-print("Running post-install commands...")
-for command in command_list:
-    print(command)
-    run(command)
+if failed_files:
+    print("The following files did not complete successfully:")
+    for file in failed_files:
+        print(file)
+else:
+    print("All packages installed successfully!")
