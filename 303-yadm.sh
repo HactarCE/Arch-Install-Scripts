@@ -2,7 +2,8 @@
 
 source header.sh
 
-pacman_auto_install yadm
+#TODO yay auto install
+yay -S --needed --noconfirm yadm-git
 echo "${bold}${blue}cd $HOME${nofmt}"
 cd $HOME
 echo

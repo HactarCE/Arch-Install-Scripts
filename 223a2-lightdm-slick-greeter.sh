@@ -9,7 +9,7 @@ fi
 
 echo "${bold}Installing ${yellow}ubuntu-font-family${white}..."
 echo
-pacman_auto_install ttf-ubuntu-font-family
+#sudo pacman_auto_install ttf-ubuntu-font-family
 echo
 
 echo "${bold}Installing ${yellow}lightdm-slick-greeter${white} from AUR..."

@@ -8,8 +8,8 @@ if [[ ${response:l} = y ]]; then
   model=`localectl | grep Model | cut -d: -f2 | cut -b2-`
   echo "${bold}${blue}localectl set-keymap colemak --no-convert${nofmt}"
   localectl set-keymap colemak --no-convert
-  echo "${bold}${blue}localectl set-x11-keymap $layout $model colemak${nofmt}"
-  localectl set-x11-keymap "$layout" "$model" colemak
+  echo "${bold}${blue}localectl set-x11-keymap $layout $model colemak --no-convert${nofmt}"
+  localectl set-x11-keymap "$layout" "$model" colemak --no-convert
   echo
   echo "${bold}${green}Colemak keymap configuration complete!${white} You may have to restart before it takes effect.${nofmt}"
 fi

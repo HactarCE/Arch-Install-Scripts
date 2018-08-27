@@ -31,9 +31,9 @@ check_connection () {
 }
 
 pacman_auto_install () {
-  echo "${bold}${blue}pacman -S $*"
+  echo "${bold}${blue}sudo pacman -S $*${nofmt}"
   echo
-  pacman -S "$@" --needed --noconfirm
+  sudo pacman -S "$@" --needed --noconfirm
   echo
 }
 

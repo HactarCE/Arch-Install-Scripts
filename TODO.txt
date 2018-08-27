@@ -3,3 +3,14 @@ add README
 make yellow/blue coloring more consistent
 
 automate 213-pacman-conf.sh
+
+fix pacman_auto_install formatting
+chfn before user is created (there's a lot of stuff messed up in this file)
+can't set X11 keyboard layout before you install X11!
+do pacman -Sy before xorg stuff
+git for lightdm aur
+after 300-user-account, pacman needs root
+pass file/folder to install-packages.py to not do everything
+restore lxappearance settings (and install mouse cursor)
+
+blacklist dell_laptop kernel module on laptop
