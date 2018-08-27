@@ -7,7 +7,6 @@ echo
 echo "You can uninstall it once we're done, if you really want.${nofmt}"
 echo
 read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
-echo
 if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}cd /tmp${nofmt}"
   cd /tmp

@@ -3,7 +3,6 @@
 source header.sh
 
 read -k1 "response?${bold}Use only ${yellow}en_US${white} locale? ${yN}"; echo
-echo
 if [[ ${response:l} = y ]]; then
   # If we matched whitespace between the comment and en_US, then the example at
   # the top of the line would be uncommented, which isn't necessarily bad, but

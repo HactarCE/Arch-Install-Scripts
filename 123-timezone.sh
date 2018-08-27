@@ -25,7 +25,6 @@ while true; do
   read -k1 "response?${bold}Confirm timezone? ${Yn}"; echo
   [[ ${response:l} = n ]] || break
 done
-echo
 echo "${bold}Setting timezone...${nofmt}"
 # sometimes /etc/localtime defaults to UTC, so we need to get rid of that first
 if [ -e /etc/localtime ]; then

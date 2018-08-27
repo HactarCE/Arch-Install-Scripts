@@ -9,7 +9,6 @@ if [[ ${response:l} != n ]]; then
   echo "${bold}${green}i3wm installation complete!${nofmt}"
   echo
   read -k1 "response?${bold}Install ${yellow}dmenu${white}, ${yellow}i3lock${white}, and ${yellow}i3status${white}? ${Yn}"; echo
-  echo
   if [[ ${response:l} != n ]]; then
     pacman_auto_install dmenu i3lock i3status
     echo "${bold}${green}i3wm accessory installation complete!${nofmt}"

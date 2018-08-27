@@ -4,7 +4,6 @@ source header.sh
 
 echo "${bold}This script installs the proprietary drivers for Nvidia's MX150 laptop graphics card. If you don't have this card, don't run this script.${nofmt}"
 read -k1 "response?${bold}Install MX150 drivers? ${yN}"; echo
-echo
 if [[ ${response:l} = y ]]; then
   pacman_auto_install bumblebee mesa nvidia nvidia-utils xf86-video-intel
   read "name?${bold}Enter username (for ${yellow}bumblebee${white} group): ${nofmt}"
