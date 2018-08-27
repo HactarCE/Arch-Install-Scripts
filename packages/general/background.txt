@@ -1,3 +1,5 @@
+bluez
+compton
+dropbox
 redshift
 xcape
-dropbox

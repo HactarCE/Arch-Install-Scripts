@@ -1,6 +1,11 @@
 # Fonts
+noto-fonts
 terminus-font-ll2-td1
+ttf-dejavu
 ttf-iosevka-ss04
 ttf-iosevka-term-ss04
+ttf-liberation
+ttf-ms-win10
 ttf-nerd-fonts-symbols
+ttf-roboto
 ttf-ubuntu-font-family

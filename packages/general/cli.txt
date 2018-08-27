@@ -11,6 +11,7 @@ xclip
 # TODO i3 has a great interface -- why is wmctrl necessary?
 # wmctrl
 imagemagick
+wget
 
 # Fun
 neofetch

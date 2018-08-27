@@ -26,8 +26,10 @@ vivaldi
 vivaldi-codecs-ffmpeg-extra-bin
 vivaldi-widevine
 
-# Zsh plugins
-# TODO
+# Zsh setup
+zsh-autosuggestions
 zsh-completions
 zsh-fast-syntax-highlighting-git
-zsh-autosuggestions
+zsh-powerlevel9k
+! sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+! mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc

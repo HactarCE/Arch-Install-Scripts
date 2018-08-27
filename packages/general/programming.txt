@@ -2,9 +2,13 @@
 # TODO figure out Python packaging/virtualenv situation
 # python-blessed
 # python-discord-git
+python
+python-pip
+python2
+python2-pip
 autopep8
 # ! pip install clipboard # not sure why/whether this is needed
-# i3ipc-python
+i3ipc-python
 # ! pip install i3ipc dmenu
 
 # Android
