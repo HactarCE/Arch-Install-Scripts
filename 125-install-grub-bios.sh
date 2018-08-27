@@ -15,5 +15,5 @@ if [[ ${response:l} != n ]]; then
   pacman_auto_install os-prober
   echo "${bold}${yellow}os-prober${green} package installation complete!${white} Grub has not necessarily been installed yet."
   echo
-  echo "Once you've booted into your new Arch installation, run ${blue}os-prober${white} and ${blue}129-grub-mkconfig.sh${white}."
+  echo "Once you've booted into your new Arch installation, run ${blue}128-grub-mkconfig.sh${white}."
 fi
