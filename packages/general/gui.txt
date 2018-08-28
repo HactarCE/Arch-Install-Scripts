@@ -20,6 +20,8 @@ eog
 tilp
 blueman
 
+nitrogen
+
 # System management
 font-manager
 gnome-system-monitor
