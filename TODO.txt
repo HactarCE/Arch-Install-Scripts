@@ -14,3 +14,6 @@ pass file/folder to install-packages.py to not do everything
 restore lxappearance settings (and install mouse cursor)
 
 blacklist dell_laptop kernel module on laptop
+
+https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
+(the 40-libinput-conf one)
