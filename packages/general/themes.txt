@@ -1,3 +1,4 @@
 arc-gtk-theme
 gnome-themes-standard
+gtk-engine-murrine # fixes Gtk-WARNING in PCManFM
 xcursor-vanilla-dmz
