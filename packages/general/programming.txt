@@ -7,7 +7,7 @@ python-pip
 python2
 python2-pip
 autopep8
-# ! pip install clipboard # not sure why/whether this is needed
+# ! pip install clipboard
 i3ipc-python
 # ! pip install i3ipc dmenu
 
