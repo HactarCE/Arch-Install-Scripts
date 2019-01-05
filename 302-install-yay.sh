@@ -6,19 +6,9 @@ echo "${bold}${yellow}yay${white} is an AUR wrapper written in Go. No, you shoul
 echo
 echo "You can uninstall it once we're done, if you really want.${nofmt}"
 echo
+
 read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
-  echo "${bold}${blue}cd /tmp${nofmt}"
-  cd /tmp
-  echo "${bold}${blue}git clone https://aur.archlinx.org/yay.git${nofmt}"
-  echo
-  git clone https://aur.archlinux.org/yay.git
-  echo
-  echo "${bold}${blue}cd yay${nofmt}"
-  cd yay
-  echo "${bold}${blue}makepkg -si${nofmt}"
-  echo
-  makepkg -si
-  echo
+  sudo pacman_auto_install yay
   echo "${bold}${yellow}yay${green} package installed!${nofmt}"
 fi
