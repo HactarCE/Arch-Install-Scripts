@@ -7,6 +7,22 @@ import sys
 import termios
 import tty
 
+def tput(*args):
+    return subprocess.check_output(['tput'] + list(args)).decode()
+
+BOLD    = tput('bold')
+NOFMT   = tput('sgr0')
+RED     = tput('setaf', '1')
+GREEN   = tput('setaf', '2')
+YELLOW  = tput('setaf', '3')
+BLUE    = tput('setaf', '4')
+MAGENTA = tput('setaf', '5')
+CYAN    = tput('setaf', '6')
+WHITE   = tput('setaf', '7')
+
+def loud_log(*args, sep=' ', **kwargs):
+    print(f"{BOLD}{CYAN}========={WHITE}   {sep.join(args)}{NOFMT}", **kwargs)
+
 def run(*args, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr, **kwargs):
     return subprocess.run(*args, stdin=stdin, stdout=stdout, stderr=stderr, **kwargs, shell=True)
 
@@ -31,7 +47,7 @@ def getch(allowed='', print_char=True):
     return ch
 
 def ask_package_group(name, allow_some=True):
-    print(f"Install package group '{name}'? [A{'S' if allow_some else ''}N]", end=' ')
+    loud_log(f"Install package group '{name}'? [A{'S' if allow_some else ''}N]", end=' ')
     sys.stdout.flush()
     c = getch('anAN' + ('sS' if allow_some else '')).lower()
     print()
@@ -57,34 +73,34 @@ def install_some(pathname):
             install_list += install_some(member_pathname)
     return install_list
 
-print("Updating package database...")
+loud_log("Updating existing packages...")
 print()
-if run('yay -Sy').returncode:
-    print("Aborting...")
+if run('yay').returncode:
+    loud_log("Aborting...")
     exit()
 
 print()
-print("A = all")
-print("S = select some")
-print("N = none")
+loud_log("A = all")
+loud_log("S = select some")
+loud_log("N = none")
 print()
 install_list = install_some('packages')
 print()
-print("Package groups to install:")
+loud_log("Package groups to install:")
 for file in install_list:
-    print(f"Install {file}")
+    loud_log(f"Install {file}")
 print()
-print("Confirm? [YN]", end=' ')
+loud_log("Confirm? [YN]", end=' ')
 sys.stdout.flush()
 yn = getch('ynYN').lower()
 if yn == 'n':
-    print("Aborting...")
+    loud_log("Aborting...")
     exit()
 
 failed_files = []
 for file in install_list:
     print()
-    print(f"Parsing {file}...")
+    loud_log(f"Parsing {file}...")
     package_list = []
     command_list = []
     for line in open(file):
@@ -93,22 +109,33 @@ for file in install_list:
             command_list.append(line[1:].strip())
         else:
             package_list += line.split()
-    print(f"Installing packages from {file}...")
+    loud_log(f"Installing packages from {file}...")
     print()
+    to_install = []
+    to_mark_as_explicit = []
+    installed_packages = set(subprocess.check_output(['yay', '-Qq']).decode().splitlines())
+    deps_packages = set(subprocess.check_output(['yay', '-Qqd']).decode().splitlines())
     for package in package_list:
-        deps_packages = set(check_output(['yay', '-Qqd']).decode().splitlines())
-        deps_to_explicit = []
-        for p in package_list:
-            if p in deps_packages:
-                deps_to_explicit.append(p)
-        if deps_to_explicit:
-            run('yay -D --asexplicit ' + ' '.join(deps_to_explicit))
-    if run('yay -S --needed --noconfirm --asexplicit ' + ' '.join(package_list)).returncode:
-        print()
-        print("Uh oh. There was an error.")
-        failed_files.append(file)
+        if package in deps_packages:
+            to_mark_as_explicit.append(package)
+        elif package not in installed_packages:
+            to_install.append(package)
+    if to_mark_as_explicit:
+        loud_log("Marking packages as explicit:", ' '.join(to_mark_as_explicit))
+        run('yay -D --asexplicit ' + ' '.join(to_mark_as_explicit))
+    if to_install:
+        loud_log("Installing packages:", ' '.join(to_install))
+        yaycmd = 'yay -S --needed --asexplicit ' + ' '.join(to_install)
+        if '--noconfirm' in sys.argv[1:]:
+            yaycmd += ' --noconfirm'
+        if run(yaycmd).returncode:
+            print()
+            loud_log("Uh oh. There was an error.")
+            failed_files.append(file)
+    else:
+        loud_log(f"All packages from {file} are already installed.")
     print()
-    print("Running post-install commands...")
+    loud_log("Running post-install commands...")
     print()
     for command in command_list:
         print(command)
@@ -116,8 +143,8 @@ for file in install_list:
 
 print()
 if failed_files:
-    print("The following files did not complete successfully:")
+    loud_log("The following files did not complete successfully:")
     for file in failed_files:
         print(file)
 else:
-    print("All packages installed successfully!")
+    loud_log("All packages installed successfully!")

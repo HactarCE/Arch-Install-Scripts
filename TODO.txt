@@ -26,3 +26,5 @@ https://wiki.archlinux.org/index.php/Nvidia-xrun#Use_bbswitch_to_manage_nvidia
 
 https://stackoverflow.com/questions/38668797/sublime-package-lang-setting
 /etc/locale.conf
+
+ckb-daemon does not exist?
