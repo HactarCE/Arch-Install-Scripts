@@ -135,11 +135,12 @@ for file in install_list:
     else:
         loud_log(f"All packages from {file} are already installed.")
     print()
-    loud_log("Running post-install commands...")
-    print()
-    for command in command_list:
-        print(command)
-        run(command)
+    if command_list:
+        loud_log("Running post-install commands...")
+        print()
+        for command in command_list:
+            print(command)
+            run(command)
 
 print()
 if failed_files:
