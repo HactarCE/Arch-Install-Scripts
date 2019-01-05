@@ -18,4 +18,4 @@ accountsservice
 bluez
 bluez-utils
 bluez-tools
-! systemctl enable bluetooth.service
+! sudo systemctl enable bluetooth.service
