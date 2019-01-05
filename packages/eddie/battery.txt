@@ -1,2 +1,3 @@
 gnome-power-manager
+powertop
 xfce4-power-manager

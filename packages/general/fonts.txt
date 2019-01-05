@@ -1,14 +1,22 @@
-# Fonts
 nerd-fonts-roboto-mono
 noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 terminus-font-ll2-td1
 ttf-dejavu
 ttf-droid
+ttf-fira-mono
+ttf-fira-sans
+ttf-font-awesome
+ttf-google-fonts-git
 ttf-iosevka-ss04
 ttf-iosevka-term-ss04
 ttf-liberation
-# ttf-ms-win10
+ttf-monaco
 ttf-ms-fonts
 ttf-nerd-fonts-symbols
 ttf-roboto
 ttf-ubuntu-font-family
+
+freetype2-cleartype

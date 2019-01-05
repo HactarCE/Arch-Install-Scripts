@@ -1,26 +1,41 @@
-# TODO
-# the_silver_searcher ctags
-
 # Useful
-asciinema # TODO maybe move to some "terminal emulator" category
-nmap
-pmount
-unp unrar zip unzip
-maim
-xclip
-# TODO i3 has a great interface -- why is wmctrl necessary?
-# wmctrl
+asciinema
+bc
+colordiff
+crudini
+dex
+dropbox-cli
+evtest
 imagemagick
+inotify-tools
+inxi
+jq
+maim
+nmap
+openvpn protonvpn-cli
+pmount
+reflector
+rlwrap
+scrot
+tldr
+trash-cli
+unp unrar zip unzip
+wdiff
 wget
+wmctrl
+xclip
+xsel
+xtoolwait
 
 # Fun
-neofetch
-lolcat
-fortune-mod
-nyancat
-cowsay
-# TODO
-# sl
-cmatrix
+asciiquarium
 bash-pipes
+cmatrix
+cowsay
+espeak
+fortune-mod
+lolcat
+neofetch
+nyancat
+
 hollywood

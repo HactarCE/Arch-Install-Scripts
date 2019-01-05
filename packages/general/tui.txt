@@ -2,4 +2,3 @@ latin-words
 iotop
 htop
 mtr
-pianobar

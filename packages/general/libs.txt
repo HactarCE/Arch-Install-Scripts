@@ -1,9 +1,21 @@
 mono
 wine
-# TODO maybe?
-# winetricks
+
 exfat-utils
+gvfs
+ntfs-3g
 
 # Kdenlive
 frei0r-plugins
 breeze-icons
+
+tk
+
+joyutils
+
+accountsservice
+
+bluez
+bluez-utils
+bluez-tools
+! systemctl enable bluetooth.service

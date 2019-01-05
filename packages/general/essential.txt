@@ -2,29 +2,27 @@
 yadm-git
 
 # Editor
-atom
-emacs
-! git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-! mkdir -p ~/.emacs.d/private/hactar-evil
-! git clone https://github.com/HactarCE/hactar-evil ~/.emacs.d/private/hactar-evil
+sublime-text-dev
 
 # Discord
 discord
 
 # i3
-i3lock-fancier-git
+dunst
 polybar
-dmenu2
+rofi
 
 # Terminal
 termite
 
 # Browser
+google-chrome
 flashplugin
 pepper-flash
-vivaldi
-vivaldi-codecs-ffmpeg-extra-bin
-vivaldi-widevine
+
+# Passwords
+bitwarden-bin
+bitwarden-cli
 
 # Zsh setup
 zsh-autosuggestions

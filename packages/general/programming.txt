@@ -1,21 +1,21 @@
 # Python
-# TODO figure out Python packaging/virtualenv situation
-# python-blessed
-# python-discord-git
 python
 python-pip
 python2
 python2-pip
 autopep8
-# ! pip install clipboard
-i3ipc-python
-# ! pip install i3ipc dmenu
+python-blessed
+python-hjson
+python-pillow
+jupyter
+! pip install --user clipboard
+! pip install --user getch
 
-# Android
-## android-platform
-## android-sdk
-## android-sdk-platform-tools
-## android-sdk-build-tools
+# # Android
+# # android-platform
+# # android-sdk
+# # android-sdk-platform-tools
+# # android-sdk-build-tools
 # android-studio
 # android-tools
 
@@ -27,3 +27,15 @@ jdk8-openjdk
 clojure
 rlwrap
 boot
+
+# # Unity
+# monodevelop-stable-bin
+# unity-editor
+# unity-editor-windows
+
+# i3wm
+i3ipc-python
+perl-anyevent-i3
+
+# Miscellany
+words
