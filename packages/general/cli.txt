@@ -25,7 +25,7 @@ wget
 wmctrl
 xclip
 xsel
-xtoolwait
+xtoolwait-git
 
 # Fun
 asciiquarium
