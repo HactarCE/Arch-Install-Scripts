@@ -5,15 +5,24 @@ make yellow/blue coloring more consistent
 automate 213-pacman-conf.sh
 
 fix pacman_auto_install formatting
-chfn before user is created (there's a lot of stuff messed up in this file)
-can't set X11 keyboard layout before you install X11!
-do pacman -Sy before xorg stuff
 git for lightdm aur
-after 300-user-account, pacman needs root
-pass file/folder to install-packages.py to not do everything
-restore lxappearance settings (and install mouse cursor)
 
 blacklist dell_laptop kernel module on laptop
 
 https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
 (the 40-libinput-conf one)
+
+# https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation
+add kernal parameter "resume=/dev/sdXN"
+add "resume" to HOOKS in /etc/mkinit.cpio
+sudo mkinitcpio -p linux
+sudo update-grub
+
+replace '#AutoEnable=false' in /etc/bluetooth/main.conf with 'AutoEnable=true'
+
+bbswitch on boot
+
+https://wiki.archlinux.org/index.php/Nvidia-xrun#Use_bbswitch_to_manage_nvidia
+
+https://stackoverflow.com/questions/38668797/sublime-package-lang-setting
+/etc/locale.conf
