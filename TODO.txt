@@ -28,3 +28,5 @@ https://stackoverflow.com/questions/38668797/sublime-package-lang-setting
 /etc/locale.conf
 
 ckb-daemon does not exist?
+
+make sure git is installed by 223a2-lightdm-slick-greeter.sh
