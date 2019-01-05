@@ -7,8 +7,8 @@ import sys
 import termios
 import tty
 
-def run(*args, **kwargs):
-    return subprocess.run(*args, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr, **kwargs, shell=True)
+def run(*args, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr, **kwargs):
+    return subprocess.run(*args, stdin=stdin, stdout=stdout, stderr=stderr, **kwargs, shell=True)
 
 def getch(allowed='', print_char=True):
     fd = sys.stdin.fileno()
@@ -95,7 +95,15 @@ for file in install_list:
             package_list += line.split()
     print(f"Installing packages from {file}...")
     print()
-    if run('yay -S --needed --noconfirm ' + ' '.join(package_list)).returncode:
+    for package in package_list:
+        deps_packages = set(check_output(['yay', '-Qqd']).decode().splitlines())
+        deps_to_explicit = []
+        for p in package_list:
+            if p in deps_packages:
+                deps_to_explicit.append(p)
+        if deps_to_explicit:
+            run('yay -D --asexplicit ' + ' '.join(deps_to_explicit))
+    if run('yay -S --needed --noconfirm --asexplicit ' + ' '.join(package_list)).returncode:
         print()
         print("Uh oh. There was an error.")
         failed_files.append(file)
