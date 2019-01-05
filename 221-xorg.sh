@@ -3,7 +3,7 @@
 source header.sh
 
 echo "${bold}Installing X.Org...${nofmt}"
-pacman_auto_install xorg-server xorg-apps xorg-xinit
+pacman_auto_install -y xorg-server xorg-apps xorg-xinit
 echo "${bold}${green}X.Org installed!${nofmt}"
 
 # TODO does this really belong here? needed for lightdm config though...
