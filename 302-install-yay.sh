@@ -9,6 +9,6 @@ echo
 
 read -k1 "response?${bold}Install ${yellow}yay${white}? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
-  sudo pacman_auto_install yay
+  pacman_auto_install yay
   echo "${bold}${yellow}yay${green} package installed!${nofmt}"
 fi
