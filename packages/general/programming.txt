@@ -38,4 +38,5 @@ i3ipc-python
 perl-anyevent-i3
 
 # Miscellany
+git
 words

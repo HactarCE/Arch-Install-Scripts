@@ -19,3 +19,6 @@ jdk8-openjdk
 clojure
 rlwrap
 boot
+
+# Miscellany
+git
