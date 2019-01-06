@@ -1,2 +1,0 @@
-# TODO should this be in gui.txt?
-arandr

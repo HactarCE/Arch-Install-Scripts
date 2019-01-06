@@ -26,6 +26,7 @@ etcher
 pcmanfm
 
 # System management and settings
+arandr
 font-manager
 gnome-system-monitor
 gparted
