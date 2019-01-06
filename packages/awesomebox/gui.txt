@@ -17,15 +17,7 @@ qt5ct
 
 # Editor/creator/viewer
 audacity
-blender
 gimp
-golly
-inkscape
-libreoffice-still
 mousepad
 viewnior
 vlc
-
-# Firefox
-firefox
-firefox-addons
