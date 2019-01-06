@@ -1,0 +1,31 @@
+# Utilities
+gcolor3
+gsimplecal
+gucharmap
+speedcrunch
+
+# File Management
+pcmanfm
+
+# System management and settings
+font-manager
+gnome-system-monitor
+lightdm-settings
+lxappearance-gtk3
+nitrogen
+qt5ct
+
+# Editor/creator/viewer
+audacity
+blender
+gimp
+golly
+inkscape
+libreoffice-still
+mousepad
+viewnior
+vlc
+
+# Firefox
+firefox
+firefox-addons

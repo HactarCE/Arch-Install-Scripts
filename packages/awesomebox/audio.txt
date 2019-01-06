@@ -1,0 +1,14 @@
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-jack
+
+# Fix Pianobar, and probably other things too
+! sudo sed -i '/^default_driver=/s/alsa/pulse/' /etc/libao.conf # after pulseaudio installation (fixes pianobar)
+! sudo sed -i '/^dev=default$/d' /etc/libao.conf
+
+pamixer
+pavucontrol
+
+cava
+pianobar
