@@ -12,7 +12,6 @@ inxi
 jq
 maim
 nmap
-openvpn protonvpn-cli
 pmount
 reflector
 rlwrap

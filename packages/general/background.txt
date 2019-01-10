@@ -2,5 +2,4 @@ compton
 dropbox
 onedrive-abraunegg-git
 redshift
-udiskie udisks2
 xcape

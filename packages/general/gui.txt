@@ -23,7 +23,8 @@ steam
 # File Management
 baobab
 etcher
-pcmanfm
+nemo
+nemo-dropbox
 
 # System management and settings
 arandr

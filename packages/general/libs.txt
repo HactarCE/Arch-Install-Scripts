@@ -2,7 +2,6 @@ mono
 wine
 
 exfat-utils
-gvfs
 ntfs-3g
 
 # Kdenlive
