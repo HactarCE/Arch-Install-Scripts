@@ -1,5 +1,7 @@
 make yellow/blue coloring more consistent
 
+just always install wpa_supplicant and dialog
+
 automate 213-pacman-conf.sh
 
 fix pacman_auto_install formatting
