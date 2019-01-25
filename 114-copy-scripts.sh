@@ -2,7 +2,7 @@
 
 source header.sh
 
-echo "${bold}Copying scripts into ${yellow}/mnt/install-scripts${white}..."
+echo "${bold}Copying scripts into ${yellow}/mnt/install-scripts${white}...${nofmt}"
 echo "${bold}${blue}cp -r /install-scripts /mnt${nofmt}"
 cp -r /install-scripts /mnt
 echo
