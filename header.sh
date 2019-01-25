@@ -27,6 +27,8 @@ check_connection () {
     echo "${bold}${green}Connected!${nofmt}"
   else
     echo "${bold}${red}Unable to connect.${white} Check ethernet connection or use ${blue}wifi-menu${white} to connect to wifi.${nofmt}"
+    echo
+    echo "${bold}Running ${blue}dhcpcd${white} might help also.${nofmt}"
   fi
 }
 
