@@ -2,7 +2,7 @@ After getting an internet connection, run the following commands:
 
     localectl set-keymap colemak
 
-    pacman -Sy git
+    pacman -Syu git
     git clone https://github.com/HactarCE/Arch-Install-Scripts /install-scripts
     cd /install-scripts
 
