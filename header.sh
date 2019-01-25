@@ -34,6 +34,7 @@ pacman_auto_install () {
   echo "${bold}${blue}sudo pacman -S $*$ --needed --noconfirm{nofmt}"
   echo
   sudo pacman -S "$@" --needed --noconfirm
+  ./beep.sh
   echo
 }
 

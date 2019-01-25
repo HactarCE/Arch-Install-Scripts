@@ -1,7 +1,12 @@
 After getting an internet connection, run the following commands:
 
-localectl set-keymap colemak
+    localectl set-keymap colemak
 
-pacman -Sy git
-git clone https://github.com/HactarCE/Arch-Install-Scripts /install-scripts
-cd /install-scripts
+    pacman -Sy git
+    git clone https://github.com/HactarCE/Arch-Install-Scripts /install-scripts
+    cd /install-scripts
+
+If you don't want to hear a beep after commands that take a while, then run the
+following command:
+
+    echo > beep.sh

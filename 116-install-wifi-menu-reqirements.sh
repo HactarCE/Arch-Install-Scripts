@@ -11,3 +11,5 @@ if [[ ${response:l} != n ]]; then
   echo
   echo "${bold}${yellow}dialog${greeen} and ${yellow}wpa_supplicant${greeen} package installation complete!${nofmt}"
 fi
+
+./beep.sh

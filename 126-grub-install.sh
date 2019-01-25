@@ -17,3 +17,5 @@ echo
 grub-install $device
 echo
 echo "${bold}${green}Bootloader installation complete!${nofmt}"
+
+./beep.sh

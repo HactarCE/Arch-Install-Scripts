@@ -9,3 +9,5 @@ echo
 arch-chroot /mnt pacman -S zsh --needed --noconfirm
 echo
 echo "${bold}${yellow}zsh${green} package installation complete!${nofmt}"
+
+./beep.sh

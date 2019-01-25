@@ -7,3 +7,5 @@ echo
 grub-mkconfig -o /boot/grub/grub.cfg
 echo
 echo "${bold}${blue}grub-mkconfig${green} complete!${nofmt}"
+
+./beep.sh
