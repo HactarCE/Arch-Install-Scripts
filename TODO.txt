@@ -1,13 +1,9 @@
-add README
-
-sudo systemctl enable lightdm
-
 make yellow/blue coloring more consistent
 
 automate 213-pacman-conf.sh
 
 fix pacman_auto_install formatting
-git for lightdm aur
+git for lightdm aur (?)
 
 blacklist dell_laptop kernel module on laptop
 
