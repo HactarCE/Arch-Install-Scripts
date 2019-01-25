@@ -140,7 +140,7 @@ for file in install_list:
         print()
         for command in command_list:
             print(command)
-            run(command)
+            os.system(command)
 
 print()
 if failed_files:
