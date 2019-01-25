@@ -11,14 +11,6 @@ tswift
 ! pip install --user clipboard
 ! pip install --user getch
 
-# # Android
-# # android-platform
-# # android-sdk
-# # android-sdk-platform-tools
-# # android-sdk-build-tools
-# android-studio
-# android-tools
-
 # Java
 jre8-openjdk
 jdk8-openjdk
@@ -27,11 +19,6 @@ jdk8-openjdk
 clojure
 rlwrap
 boot
-
-# # Unity
-# monodevelop-stable-bin
-# unity-editor
-# unity-editor-windows
 
 # i3wm
 i3ipc-python

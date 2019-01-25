@@ -1,0 +1,3 @@
+monodevelop-stable-bin
+unity-editor
+unity-editor-windows

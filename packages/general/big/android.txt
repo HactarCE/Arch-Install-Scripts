@@ -1,0 +1,7 @@
+android-platform
+android-sdk
+android-sdk-platform-tools
+android-sdk-build-tools
+
+android-studio
+android-tools

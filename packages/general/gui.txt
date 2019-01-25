@@ -15,7 +15,6 @@ speedcrunch
 4dtris
 ckan
 gnome-mines
-google-earth-pro
 kmines
 multimc5
 steam
@@ -44,7 +43,6 @@ blender
 gimp
 golly
 inkscape
-intellij-idea-community-edition
 kdenlive
 libreoffice-still
 mousepad
