@@ -1,20 +1,24 @@
+# OS compatibility layers
 mono
 wine
 
+# Filesystem things
 exfat-utils
 ntfs-3g
+p7zip
 
 # Kdenlive
 frei0r-plugins
 breeze-icons
+
+# Bluetooth
+bluez
+bluez-utils
+bluez-tools
+! sudo systemctl enable bluetooth.service
 
 tk
 
 joyutils
 
 accountsservice
-
-bluez
-bluez-utils
-bluez-tools
-! sudo systemctl enable bluetooth.service

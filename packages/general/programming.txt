@@ -7,7 +7,7 @@ autopep8
 python-blessed
 python-hjson
 python-pillow
-jupyter
+tswift
 ! pip install --user clipboard
 ! pip install --user getch
 

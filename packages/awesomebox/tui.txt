@@ -1,4 +1,0 @@
-latin-words
-iotop
-htop
-mtr

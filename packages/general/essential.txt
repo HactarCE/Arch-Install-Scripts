@@ -1,3 +1,7 @@
+# Awesome WM
+awesome
+vicious
+
 # Dotfiles
 yadm-git
 
@@ -8,6 +12,7 @@ sublime-text-dev
 discord
 
 # i3
+i3-gaps
 dunst
 polybar
 rofi
@@ -27,7 +32,8 @@ bitwarden-cli
 # Zsh setup
 zsh-autosuggestions
 zsh-completions
-zsh-fast-syntax-highlighting-git
-zsh-theme-powerlevel9k
+zsh-pure-prompt
 ! sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ! mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+! git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+! git clone https://github.com/zdharma/fast-syntax-highlighting ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting

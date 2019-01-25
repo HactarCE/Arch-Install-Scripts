@@ -2,4 +2,5 @@ compton
 dropbox
 onedrive-abraunegg-git
 redshift
+screenkey
 xcape

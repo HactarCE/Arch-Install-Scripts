@@ -1,2 +1,0 @@
-virtualbox-guest-modules-arch
-virtualbox-guest-utils

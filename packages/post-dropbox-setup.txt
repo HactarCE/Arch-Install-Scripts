@@ -1,0 +1,11 @@
+### Only "install" this file after Dropbox has synced and everything is done
+
+# Lock screen
+! sudo cp -L ~/Pictures/lock.png /usr/share/backgrounds
+
+# Windows fonts
+! cd ~/.local/share/fonts
+! md -p Windows-Fonts
+! cd Windows-Fonts
+! unp ~/Dropbox/Miscellaneous/Windows-Fonts-2018-12-10.zip
+! fc-cache

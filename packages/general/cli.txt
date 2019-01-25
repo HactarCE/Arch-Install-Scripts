@@ -12,6 +12,7 @@ inxi
 jq
 maim
 nmap
+openvpn
 pmount
 reflector
 rlwrap
