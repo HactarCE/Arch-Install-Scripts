@@ -1,0 +1,4 @@
+Chrome:
+- open chrome://flags/ and enable smooth scrolling
+- check Bitwarden timeout (should be 5 min)
+- copy Chrome extension settings from Gist
