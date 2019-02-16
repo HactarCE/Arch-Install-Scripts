@@ -6,10 +6,15 @@ echo "${bold}Installing X.Org...${nofmt}"
 pacman_auto_install -y xorg-server xorg-apps xorg-xinit
 echo "${bold}${green}X.Org installed!${nofmt}"
 
-# TODO does this really belong here? needed for lightdm config though...
+echo "${bold}Copy ${yellow}/install-scripts/etc/xorg.conf.d/*${white} into ${yellow}/etc/X11/xorg.conf.d${white}. If you are not the author of these scripts, ${underline}you should check what those files do before answering \"yes\" to the following prompt.${no_underline}"
 echo
-read -k1 "response?${bold}Install ${yellow}numlockx${white}? ${Yn}"; echo
+read -k1 "response?${bold}${underline}This may replace some files in ${yellow}/etc/X11/xorg.conf.d/${white}${no_underline}. Continue? ${Yn}"; echo
 if [[ ${response:l} != n ]]; then
-  pacman_auto_install numlockx
-  echo "${bold}${yellow}numlockx${white} package installation complete!${nofmt}"
+  echo "${bold}${blue}cp -r /install-scripts/etc/xorg.conf.d/* /etc/X11/xorg.conf.d${nofmt}"
+  cp -r /install-scripts/etc/xorg.conf.d/* /etc/X11/xorg.conf.d
+  echo
+  echo "${bold}${green}XOrg configuration complete!${nofmt}"
 fi
+
+echo
+echo "${bold}Manually copy one of the ${jellow}xorg.conf${white} files from ${yellow}/install-scripts/etc${white} into ${yellow}/etc${white}."
