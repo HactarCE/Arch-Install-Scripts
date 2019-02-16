@@ -12,6 +12,7 @@ inxi
 jq
 maim
 nmap
+numlockx
 openvpn
 pmount
 reflector
@@ -19,13 +20,19 @@ rlwrap
 scrot
 tldr
 trash-cli
-unp unrar zip unzip
 wdiff
 wget
 wmctrl
 xclip
 xsel
 xtoolwait-git
+
+# Unp
+unp
+cpio
+unrar
+unzip
+zip
 
 # Fun
 asciiquarium

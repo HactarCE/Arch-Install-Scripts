@@ -2,34 +2,46 @@
 awesome
 vicious
 
-# Dotfiles
-yadm-git
-
-# Editor
-sublime-text-dev
-
-# Discord
-discord
-
-# i3
-i3-gaps
-dunst
-polybar
-rofi
-
-# Terminal
-termite
-
 # Browser
 google-chrome
 flashplugin
 pepper-flash
 
+# Dotfiles
+yadm-git
+
+# Discord
+discord
+
+# Editor
+sublime-text-dev
+
+# i3
+dunst
+i3-gaps
+i3ipc-python
+jsoncpp # enables i3wm support in Polybar
+polybar
+rofi
+
+# LightDM
+lightdm
+lightdm-settings
+lightdm-slick-greeter
+light-locker
+
+# Package installation
+yay
+
 # Passwords
 bitwarden-bin
 bitwarden-cli
 
-# Zsh setup
+# Terminal
+termite
+
+# Zsh
+zsh
 zsh-autosuggestions
 zsh-completions
 zsh-pure-prompt

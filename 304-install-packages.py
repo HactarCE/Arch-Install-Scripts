@@ -56,7 +56,7 @@ def ask_package_group(name, allow_some=True):
 def install_all(pathname):
     if path.isdir(pathname):
         install_list = []
-        for member in os.listdir(pathname):
+        for member in sorted(os.listdir(pathname)):
             install_list += install_all(path.join(pathname, member))
         return install_list
     else:
@@ -64,7 +64,7 @@ def install_all(pathname):
 
 def install_some(pathname):
     install_list = []
-    for member in os.listdir(pathname):
+    for member in sorted(os.listdir(pathname)):
         member_pathname = path.join(pathname, member)
         c = ask_package_group(member_pathname, path.isdir(member_pathname))
         if c == 'a':
@@ -114,24 +114,25 @@ for file in install_list:
     to_install = []
     to_mark_as_explicit = []
     installed_packages = set(subprocess.check_output(['yay', '-Qq']).decode().splitlines())
-    deps_packages = set(subprocess.check_output(['yay', '-Qqd']).decode().splitlines())
     for package in package_list:
-        if package in deps_packages:
-            to_mark_as_explicit.append(package)
-        elif package not in installed_packages:
+        if package not in installed_packages:
             to_install.append(package)
-    if to_mark_as_explicit:
-        loud_log("Marking packages as explicit:", ' '.join(to_mark_as_explicit))
-        run('yay -D --asexplicit ' + ' '.join(to_mark_as_explicit))
     if to_install:
         loud_log("Installing packages:", ' '.join(to_install))
-        yaycmd = 'yay -S --needed --asexplicit ' + ' '.join(to_install)
+        yaycmd = 'yay -S --needed ' + ' '.join(to_install)
         if '--noconfirm' in sys.argv[1:]:
             yaycmd += ' --noconfirm'
         if run(yaycmd).returncode:
             print()
             loud_log("Uh oh. There was an error.")
             failed_files.append(file)
+    deps_packages = set(subprocess.check_output(['yay', '-Qqd']).decode().splitlines())
+    for package in package_list:
+        if package in deps_packages:
+            to_mark_as_explicit.append(package)
+    if to_mark_as_explicit:
+        loud_log("Marking packages as explicit:", ' '.join(to_mark_as_explicit))
+        run('yay -D --asexplicit ' + ' '.join(to_mark_as_explicit))
     else:
         loud_log(f"All packages from {file} are already installed.")
     print()

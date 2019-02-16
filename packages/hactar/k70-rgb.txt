@@ -1,5 +1,5 @@
 ckb-next
-! sudo systemctl enable ckb-daemon
+! sudo systemctl enable ckb-next-daemon
 # evtest
 # TODO this is NOT the place for this stuff
 # evtest /dev/input/event8 | grep MSC_SCAN

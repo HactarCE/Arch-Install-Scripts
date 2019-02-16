@@ -3,4 +3,4 @@ virtualbox
 virtualbox-host-modules-arch
 
 # Xephyr
-xephyr
+xorg-server-xephyr

@@ -1,4 +1,5 @@
-latin-words
-iotop
+autorandr
 htop
+iotop
+latin-words
 mtr

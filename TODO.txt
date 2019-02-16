@@ -16,7 +16,7 @@ https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpa
 (the 40-libinput-conf one)
 
 # https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation
-add kernal parameter "resume=/dev/sdXN"
+add kernal parameter "resume=/dev/sdXN" in /etc/default/grub
 add "resume" to HOOKS in /etc/mkinit.cpio
 sudo mkinitcpio -p linux
 sudo update-grub
@@ -33,3 +33,7 @@ https://stackoverflow.com/questions/38668797/sublime-package-lang-setting
 ckb-daemon does not exist?
 
 make sure git is installed by 223a2-lightdm-slick-greeter.sh
+
+something to list packages marked as explicit but not specified in package TXTs
+
+git clone https://github.com/tonsky/sublime-clojure ~/.config/sublime-text-3/Packages

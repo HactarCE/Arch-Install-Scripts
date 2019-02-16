@@ -44,7 +44,7 @@ gimp
 golly
 inkscape
 kdenlive
-libreoffice-still
+libreoffice-still libpaper
 mousepad
 obs-studio
 peek
