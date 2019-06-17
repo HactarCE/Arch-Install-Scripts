@@ -3,6 +3,7 @@ make yellow/blue coloring more consistent
 make sure to use jdk8-openjdk instead of jdk7-openjdk
 
 automate 213-pacman-conf.sh
+- https://github.com/phortx/Raspberry-Pi-Setup-Guide#31-tweak-pacman
 
 fix "n/a" showing up in keyboard thing
 - should be "pc101" or "us", not "n/a"
