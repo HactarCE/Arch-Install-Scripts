@@ -4,4 +4,10 @@ android-sdk-platform-tools
 android-sdk-build-tools
 
 android-studio
-android-tools
+
+# Udev rules (required for ADB stuff)
+libmtp
+
+# TODO untested
+# Permissions (also required for ADB stuff)
+! sudo groupadd plugdev && sudo usermod -aG plugdev $(whoami)

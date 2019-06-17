@@ -1,5 +1,6 @@
 # Useful
 asciinema
+autojump
 bc
 colordiff
 crudini
@@ -26,6 +27,7 @@ wmctrl
 xclip
 xsel
 xtoolwait-git
+youtube-dl
 
 # Unp
 unp

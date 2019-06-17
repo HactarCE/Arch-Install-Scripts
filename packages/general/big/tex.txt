@@ -1,0 +1,3 @@
+texlive-core
+texlive-bin
+texlive-most

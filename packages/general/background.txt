@@ -1,6 +1,7 @@
 compton
 dropbox
-onedrive-abraunegg-git
+onedrive-abraunegg
+plover
 redshift
 screenkey
 xcape

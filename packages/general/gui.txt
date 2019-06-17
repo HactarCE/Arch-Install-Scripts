@@ -1,5 +1,7 @@
 # Miscellany
 blueman
+hexchat
+onboard
 splatmoji
 tilp
 transmission-gtk
@@ -11,23 +13,15 @@ gsimplecal
 gucharmap
 speedcrunch
 
-# Games
-4dtris
-ckan
-gnome-mines
-kmines
-multimc5
-steam
-
 # File Management
 baobab
-etcher
 nemo
 nemo-dropbox
 
 # System management and settings
 arandr
 font-manager
+hardinfo
 gnome-system-monitor
 gparted
 grub-customizer
@@ -45,7 +39,9 @@ golly
 inkscape
 kdenlive
 libreoffice-still libpaper
+lmms
 mousepad
+musescore
 obs-studio
 peek
 viewnior

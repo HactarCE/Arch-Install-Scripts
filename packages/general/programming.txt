@@ -4,25 +4,40 @@ python-pip
 python2
 python2-pip
 autopep8
+cython
 python-blessed
 python-hjson
+python-hypothesis
+python-matplotlib
 python-pillow
+python-pytest
+python-virtualenv
 ! pip install --user clipboard
+! pip install --user discord.py
 ! pip install --user getch
 ! pip install --user tswift
 
 # Java
 jre8-openjdk
 jdk8-openjdk
+maven
 
 # Clojure
 clojure
 rlwrap
 boot
 
+# Lua
+lua-filesystem
+luajit
+
 # i3wm
 i3ipc-python
 perl-anyevent-i3
+
+# Linters
+flake8
+luacheck
 
 # Miscellany
 git
