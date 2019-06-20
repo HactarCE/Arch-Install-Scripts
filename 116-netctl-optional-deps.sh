@@ -13,6 +13,6 @@ source header.sh
 # fi
 
 # TODO more friendly explanation of why this is necessary
-arch-chroot /mnt pacman -S dialog dhcpcd wpa_supplicant ifplugd wpa_actiond
+arch-chroot /mnt pacman -S dialog dhcpcd wpa_supplicant ifplugd # wpa_actiond
 
 ./beep.sh
