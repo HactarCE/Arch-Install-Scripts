@@ -6,6 +6,3 @@ minecraft-launcher
 multimc5
 nbtexplorer
 steam
-
-# Link FTL save game with Dropbox
-! ln -s ~/Dropbox/Games/FTL/FasterThanLight ~/.local/share/FasterThanLight
