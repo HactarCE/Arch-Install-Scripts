@@ -15,5 +15,5 @@ if [[ ${response:l} != n ]]; then
   echo "${bold}${blue}cp -r /install-scripts/etc/udev/rules.d/* /etc/udev/rules.d${nofmt}"
   sudo cp -r /install-scripts/etc/udev/rules.d/* /etc/udev/rules.d
   echo
-  echo "${bold}${green}LightDM configuration complete!${nofmt}"
+  echo "${bold}${green}Udev configuration complete!${nofmt}"
 fi
