@@ -1,5 +1,5 @@
 # Awesome WM
-awesome
+awesome-git
 vicious
 
 # Browser
@@ -14,7 +14,7 @@ discord
 # i3
 dunst
 i3-gaps
-i3ipc-python
+i3ipc-python-git
 jsoncpp # enables i3wm support in Polybar
 perl-anyevent-i3
 polybar
@@ -33,5 +33,9 @@ light-locker
 # Password manager
 bitwarden-bin
 
+# Polkit and autostart
+lxsession
+
 # Terminal
-termite
+alacritty
+alacritty-terminfo

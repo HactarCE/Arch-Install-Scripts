@@ -1,3 +1,27 @@
+# Cybersecurity
+binwalk
+john
+
+# Fun
+asciiquarium
+bash-pipes
+beep
+cmatrix
+cowsay
+espeak
+fortune-mod
+hollywood
+lolcat
+neofetch
+nyancat
+
+# Unp
+unp
+cpio
+unrar
+unzip
+zip
+
 # Useful
 arch-install-scripts
 asciinema
@@ -5,9 +29,9 @@ autojump
 bc
 colordiff
 crudini
-dex
 dropbox-cli
 evtest
+hwinfo
 imagemagick
 inotify-tools
 inxi
@@ -19,6 +43,7 @@ openvpn
 pmount
 reflector
 rlwrap
+rsync
 scrot
 tldr
 trash-cli
@@ -29,22 +54,3 @@ xclip
 xsel
 xtoolwait-git
 youtube-dl
-
-# Unp
-unp
-cpio
-unrar
-unzip
-zip
-
-# Fun
-asciiquarium
-bash-pipes
-cmatrix
-cowsay
-espeak
-fortune-mod
-hollywood
-lolcat
-neofetch
-nyancat

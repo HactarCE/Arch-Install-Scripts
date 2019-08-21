@@ -1,4 +1,5 @@
 4dtris
+atlauncher
 ckan
 gnome-mines
 kmines

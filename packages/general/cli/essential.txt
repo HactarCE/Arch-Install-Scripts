@@ -4,6 +4,10 @@ yadm-git
 # Editor
 xi-term
 
+# Network Time Protocol
+ntp
+! timedatectl set-ntp true
+
 # Package installation
 yay
 
@@ -12,9 +16,6 @@ bitwarden-cli
 
 # Zsh
 zsh
-zsh-autosuggestions
-zsh-pure-prompt
-! sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-! mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-! git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-! git clone https://github.com/zdharma/fast-syntax-highlighting ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
+pkgfile
+! git clone https://github.com/zsh-users/antigen.git ~/.antigen
+! sudo systemctl enable --now pkgfile-update.timer # for command-not-found

@@ -4,6 +4,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 terminus-font-ll2-td1
+terminus-font-ll2-td1-ttf
 ttf-dejavu
 ttf-droid
 ttf-fira-mono

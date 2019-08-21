@@ -1,17 +1,18 @@
-# Miscellany
-blueman
-hexchat
-onboard
-splatmoji
-tilp
-transmission-gtk
-zeal
-
-# Utilities
-gcolor3
-gsimplecal
-gucharmap
-speedcrunch
+# Editor/creator/viewer
+audacity
+blender
+gimp
+golly
+inkscape
+kdenlive
+libreoffice-still libpaper
+lmms
+mousepad
+musescore
+obs-studio
+peek
+viewnior
+vlc
 
 # File Management
 baobab
@@ -29,20 +30,25 @@ lightdm-settings
 lxappearance-gtk3
 nitrogen
 qt5ct
-xbindkeys_config-gtk2
 
-# Editor/creator/viewer
-audacity
-blender
-gimp
-golly
-inkscape
-kdenlive
-libreoffice-still libpaper
-lmms
-mousepad
-musescore
-obs-studio
-peek
-viewnior
-vlc
+# Miscellany
+blueman
+hexchat
+onboard
+splatmoji
+tilp
+transmission-gtk
+zeal
+
+# Networking
+network-manager
+nm-connection-editor
+! sudo pacman -R netctl
+! sudo systemctl enable --now NetworkManager
+
+# Utilities
+etcher-bin
+gcolor3
+gsimplecal
+gucharmap
+speedcrunch

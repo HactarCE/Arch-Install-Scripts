@@ -5,9 +5,12 @@ android-sdk-build-tools
 
 android-studio
 
-# Udev rules (required for ADB stuff)
+# GVFS (required for file transfer)
+gvfs-mtp
+
+# Udev rules (required for ADB)
 libmtp
 
 # TODO untested
-# Permissions (also required for ADB stuff)
+# Permissions (also required for ADB)
 ! sudo groupadd plugdev && sudo usermod -aG plugdev $(whoami)
