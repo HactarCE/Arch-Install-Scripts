@@ -1,0 +1,11 @@
+# OS compatibility layers
+mono
+wine
+
+# Kdenlive
+frei0r-plugins
+breeze-icons
+
+# Miscellany
+joyutils
+tk

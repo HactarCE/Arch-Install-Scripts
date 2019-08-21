@@ -1,4 +1,5 @@
 # Useful
+arch-install-scripts
 asciinema
 autojump
 bc
@@ -43,8 +44,7 @@ cmatrix
 cowsay
 espeak
 fortune-mod
+hollywood
 lolcat
 neofetch
 nyancat
-
-hollywood

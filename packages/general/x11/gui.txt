@@ -46,7 +46,3 @@ obs-studio
 peek
 viewnior
 vlc
-
-# Firefox
-firefox
-firefox-addons

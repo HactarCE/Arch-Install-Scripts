@@ -1,36 +1,8 @@
-# Awesome WM
-awesome
-vicious
-
-# Browser
-google-chrome
-flashplugin
-pepper-flash
-
 # Dotfiles
 yadm-git
 
-# Discord
-discord
-
 # Editor
-sublime-text-dev
 xi-term
-xi-gtk-git
-
-# i3
-dunst
-i3-gaps
-i3ipc-python
-jsoncpp # enables i3wm support in Polybar
-polybar
-rofi
-
-# LightDM
-lightdm
-lightdm-settings
-lightdm-slick-greeter
-light-locker
 
 # Package installation
 yay
@@ -38,9 +10,6 @@ yay
 # Passwords
 bitwarden-bin
 bitwarden-cli
-
-# Terminal
-termite
 
 # Zsh
 zsh

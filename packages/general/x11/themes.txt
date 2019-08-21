@@ -1,5 +1,5 @@
 equilux-theme
-gtk-engine-murrine # fixes Gtk-WARNING in PCManFM
+flat-remix-gtk
 papirus-folders-git
 papirus-icon-theme
 xcursor-vanilla-dmz

@@ -12,10 +12,10 @@ python-matplotlib
 python-pillow
 python-pytest
 python-virtualenv
-! pip install --user clipboard
-! pip install --user discord.py
-! pip install --user getch
-! pip install --user tswift
+#! pip install --user clipboard
+#! pip install --user discord.py
+#! pip install --user getch
+#! pip install --user tswift
 
 # Java
 jre8-openjdk
@@ -31,14 +31,12 @@ boot
 lua-filesystem
 luajit
 
-# i3wm
-i3ipc-python
-perl-anyevent-i3
-
 # Linters
 flake8
 luacheck
 
 # Miscellany
-git
 words
+
+# VCS
+git

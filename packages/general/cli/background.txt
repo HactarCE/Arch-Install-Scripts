@@ -1,7 +1,3 @@
 compton
 dropbox
 onedrive-abraunegg
-plover
-redshift
-screenkey
-xcape

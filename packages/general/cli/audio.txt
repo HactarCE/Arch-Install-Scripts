@@ -5,7 +5,6 @@ pulseaudio-bluetooth
 pulseaudio-jack
 alsa-utils
 pamixer
-pavucontrol
 
 # Fix Pianobar, and probably other things too
 ! sudo sed -i '/^default_driver=/s/alsa/pulse/' /etc/libao.conf # after pulseaudio installation (fixes pianobar)
@@ -20,4 +19,5 @@ cava
 fluidsynth
 freepats-general-midi
 qsynth
+soundfont-fluid
 timidity++

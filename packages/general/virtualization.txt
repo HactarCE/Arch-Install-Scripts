@@ -1,6 +1,0 @@
-# Virtualbox
-virtualbox
-virtualbox-host-modules-arch
-
-# Xephyr
-xorg-server-xephyr
