@@ -16,6 +16,8 @@ if [[ ${response:l} = y ]]; then
   echo
   systemctl enable bumblebeed.service
   echo
+  echo "${bold}${blue}nvidia-xconfig${nofmt}"
+  sudo nvidia-xconfig
   echo "${bold}${green}Nvidia MX150 proprietary drivers installed!${white}"
   echo "See https://wiki.archlinux.org/index.php/Bumblebee#Test for information on testing them.${nofmt}"
 fi
