@@ -7,8 +7,7 @@ xi-term
 # Package installation
 yay
 
-# Passwords
-bitwarden-bin
+# Password manager
 bitwarden-cli
 
 # Zsh

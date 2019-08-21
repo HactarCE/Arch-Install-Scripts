@@ -30,5 +30,8 @@ lightdm-settings
 lightdm-slick-greeter
 light-locker
 
+# Password manager
+bitwarden-bin
+
 # Terminal
 termite
