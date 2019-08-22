@@ -29,6 +29,7 @@ autojump
 bc
 colordiff
 crudini
+downgrade
 dropbox-cli
 evtest
 hwinfo

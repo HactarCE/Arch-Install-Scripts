@@ -5,9 +5,6 @@ android-sdk-build-tools
 
 android-studio
 
-# GVFS (required for file transfer)
-gvfs-mtp
-
 # Udev rules (required for ADB)
 libmtp
 

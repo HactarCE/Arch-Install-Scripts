@@ -1,7 +1,9 @@
 # Filesystem things
 exfat-utils
+gvfs-mtp
 ntfs-3g
 p7zip
+# GVFS is for Android file transfer
 
 # Bluetooth
 bluez
