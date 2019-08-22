@@ -8,6 +8,9 @@ xi-term
 ntp
 ! timedatectl set-ntp true
 
+# Networking
+networkmanager
+
 # Package installation
 yay
 

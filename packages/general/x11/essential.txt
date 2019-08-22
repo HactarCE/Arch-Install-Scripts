@@ -30,6 +30,11 @@ lightdm-settings
 lightdm-slick-greeter
 light-locker
 
+# Networking
+nm-connection-editor
+! sudo pacman -R netctl
+! sudo systemctl enable --now NetworkManager
+
 # Password manager
 bitwarden-bin
 

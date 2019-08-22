@@ -40,12 +40,6 @@ tilp
 transmission-gtk
 zeal
 
-# Networking
-network-manager
-nm-connection-editor
-! sudo pacman -R netctl
-! sudo systemctl enable --now NetworkManager
-
 # Utilities
 etcher-bin
 gcolor3

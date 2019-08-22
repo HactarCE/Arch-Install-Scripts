@@ -1,3 +1,2 @@
-compton
 dropbox
 onedrive-abraunegg
