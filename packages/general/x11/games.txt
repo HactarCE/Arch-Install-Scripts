@@ -1,6 +1,6 @@
 4dtris
 atlauncher
-ckan
+# ckan
 gnome-mines
 kmines
 minecraft-launcher
