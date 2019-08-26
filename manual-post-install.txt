@@ -1,5 +1,2 @@
 Firefox:
 - set Bitwarden timeout to 15 minutes
-
-Set up hibernation to swapfile (if using swapfile):
-https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file
