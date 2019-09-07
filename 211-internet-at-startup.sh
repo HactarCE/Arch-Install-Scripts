@@ -4,7 +4,7 @@ source header.sh
 
 echo "${bold}Installing ${yellow}ifplugd${white} and ${yellow}wpa_actiond${white}..."
 echo
-pacman_auto_install ifplugd wpa_actiond
+pacman_auto_install ifplugd
 echo "${bold}Searching for network interfaces using ${blue}ip link show${white}...${nofmt}"
 echo
 interfaces=`ip link show | cut -d: -f2 | cut -b2-`
