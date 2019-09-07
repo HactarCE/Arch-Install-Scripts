@@ -36,13 +36,10 @@ if [[ ${response:l} != n ]]; then
   if [[ ${response:l} != n ]]; then
     echo "${bold}Okay, you're on your own for this one. I'm going to run ${blue}visudo${white}, and you'll have to add the following one line under the \"User privelage specification\" section:"
     echo "${yellow}${user} ALL=(ALL) ALL${white}"
-    echo "$There should be a similar line for the ${yellow}root${white} user. Here's a quick vi/vim crash course to get you through:"
-    echo "- Use the arrow keys to move."
-    echo "- Press ${yellow}i${white} before trying to type stuff."
-    echo "- Press ${yellow}ctrl-[ : w q enter${white} to save and exit."
+    echo "There should be a similar line for the ${yellow}root${white} user."
     echo "Good luck!"
     any_key_continue()
-    visudo
+    EDITOR=nano visudo
     echo "${bold}I'm just going to trust that you did that correctly. If you don't feel confident, you can always run ${blue}visudo${white}manually."
     echo
   fi
