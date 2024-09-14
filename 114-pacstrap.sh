@@ -2,9 +2,9 @@
 
 source header.sh
 
-echo "${bold}Running ${blue}pacstrap /mnt base base-devel${white}...${nofmt}"
+echo "${bold}Running ${blue}pacstrap /mnt base linux linux-firmware${white}...${nofmt}"
 echo
-pacstrap /mnt base base-devel
+pacstrap /mnt base linux linux-firmware
 echo
 echo "${bold}${blue}pacstrap${green} complete!${nofmt}"
 
